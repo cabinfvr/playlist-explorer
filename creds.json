@@ -1,0 +1,5 @@
+{
+    "id": "YOUR_CLIENT_ID",
+    "secret": "YOUR_CLIENT_SECRET",
+    "url": "https://open.spotify.com/playlist/1aaM5rTMnNjIq1IF1LHPAD" // this is just a placeholder url
+}
