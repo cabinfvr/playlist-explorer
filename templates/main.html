@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Playlist Explorer</title>
+    <style>
+        input {
+            width: 1000px;
+        }
+    </style>
+     <style>
+        h1 {
+            font-weight: normal;
+        }
+        
+        img {
+            width: 64px;
+            height: 64px;
+        }
+        
+        .song {
+            display: flex;
+            gap: 10px;
+        }
+        h1 {
+    font-family: arial;
+    font-weight: normal;
+}
+
+html {
+    padding: 5px;
+    text-align: center;
+    	display: flex;
+	flex-direction: column;
+	justify-content: center;
+      background-color: black;
+    color: white;
+}
+
+      a {
+        color:white
+      }
+      a:visited {
+        color: whitesmoke;
+      }
+
+img {
+    border-radius: 5px;
+  border: solid 1px white;
+}
+
+      caption1 {
+        font-style: italic;
+        color: gray;
+        opacity: 50%;
+        font-family: arial;
+        font-size: 10px;
+      }
+      .e {
+    color: white;
+    font-family: arial;
+    text-transform: uppercase;
+    background: grey;
+    padding: 15px;
+    border-radius: 5px;
+    min-width: 70px;
+}
+
+img.special {
+    width: 300px;
+    height: 300px;
+}
+
+h1.special {
+    font-size: 100px;
+}
+
+div.special {
+    gap: 30px;
+}
+input {
+    background: black;
+    padding: 10px;
+    color: white;
+    border: solid 1px white;
+    border-radius: 25px;
+}
+form {
+    padding: 10px;
+}
+
+    </style>
+</head>
+<body>
+    <h1>
+        Spotify Playlist URL:   
+    </h1>
+    <form action='/playlist_gen' method='post'>
+        <input name='url' placeholder='Enter your spotify playlist here'><br/><br/><br/>
+        <input type='submit' value='Submit (press enter)'>
+    </form>
+</body>
+</html>
