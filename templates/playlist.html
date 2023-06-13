@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h1 {
+            font-weight: normal;
+        }
+        
+        img {
+            width: 64px;
+            height: 64px;
+        }
+        
+        .song {
+            display: flex;
+            gap: 10px;
+        }
+        h1 {
+    font-family: arial;
+    font-weight: normal;
+}
+
+html {
+    padding: 5px;
+    text-align: center;
+    	display: flex;
+	flex-direction: column;
+	justify-content: center;
+      background-color: black;
+    color: white;
+}
+
+      a {
+        color:white
+      }
+      a:visited {
+        color: whitesmoke;
+      }
+
+img {
+    border-radius: 5px;
+  border: solid 1px white;
+}
+
+      caption1 {
+        font-style: italic;
+        color: gray;
+        opacity: 50%;
+        font-family: arial;
+        font-size: 10px;
+      }
+      .e {
+    color: white;
+    font-family: arial;
+    text-transform: uppercase;
+    background: grey;
+    padding: 15px;
+    border-radius: 5px;
+    min-width: 70px;
+}
+
+img.special {
+    width: 300px;
+    height: 300px;
+}
+
+h1.special {
+    font-size: 100px;
+}
+
+div.special {
+    gap: 30px;
+}
+    </style>
+    <title>
+        {{playlist_info[0]}}
+    </title>
+    <link rel='favicon' href='{{playlist_info[1]}}'>
+    <link rel='shortcut icon' href='{{playlist_info[1]}}'>
+</head>
+<body>
+    <div class='song special'>
+        <img src='{{playlist_info[1]}}' class='special'> <h1 class='special'>{{playlist_info[0]}}</h1>
+    </div><br/><br/><br/>
+    {% for track in playlist_songs %}
+        <div class="song">
+            <img src='{{track[2]}}'>
+            <h1><b><a href='{{track[3]}}'>{{track[0]}}</a></b> by <b><a href='{{track[4]}}'>{{track[1]}}</a></b></h1>
+        </div>
+
+    {% endfor %}
+    <caption1>
+        Made by <a href="https://starbursts.me">funeral</a>
+      </caption1>
+</body>
+</html>
